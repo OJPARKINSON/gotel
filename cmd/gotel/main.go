@@ -36,7 +36,7 @@ func run() error {
 	router := chi.NewRouter()
 	router.Route("/reservations", func(r chi.Router) {
 		r.Post("/", resHandlers.Create)
-		r.get("/{id}", resHandlers.GetByID)
+		r.Get("/{id}", resHandlers.GetByID)
 	})
 
 	server := &http.Server{
