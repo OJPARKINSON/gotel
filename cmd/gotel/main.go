@@ -40,14 +40,14 @@ func run() error {
 	})
 
 	server := &http.Server{
-		Addr:         ":8080",
+		Addr:         ":8011",
 		Handler:      router,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
 	}
 
 	go func() {
-		log.Println("listening on :8080")
+		log.Println("listening on :8011")
 		if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			log.Println(err)
 		}
