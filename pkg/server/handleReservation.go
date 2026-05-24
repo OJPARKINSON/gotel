@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/OJPARKINSON/gotel/reservation"
+	"github.com/OJPARKINSON/gotel/pkg/reservation"
 )
 
 type ReservationHandler struct {

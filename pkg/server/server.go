@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/OJPARKINSON/gotel/reservation"
+	"github.com/OJPARKINSON/gotel/pkg/reservation"
 )
 
 type Server struct {
