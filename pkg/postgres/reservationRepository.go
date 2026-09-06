@@ -3,7 +3,7 @@ package postgres
 import (
 	"context"
 
-	"github.com/OJPARKINSON/gotel/reservation"
+	"github.com/OJPARKINSON/gotel/pkg/reservation"
 	"github.com/jackc/pgx/v5"
 )
 
